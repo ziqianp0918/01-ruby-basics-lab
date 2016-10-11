@@ -6,18 +6,8 @@ describe "ruby" do
 
   describe "#division" do
     it 'given two numbers returns quotient of the first number divided by the second number' do
-      num1 = 42
-      num2 = 7
-
-      expect(division(num1,num2)).to eq(6)
-    end
-  end
-
-  describe '#assign_variable' do
-    it 'takes an argument of a persons name and assign it to a variable name' do
-      value = "Bob"
-
-      expect(assign_variable(value)).to eq(value)
+      expect(division(42,7)).to eq(6)
+      expect(division(30,6)).to eq(5)
     end
   end
 
@@ -50,12 +40,6 @@ describe "ruby" do
     end
   end
 
-  describe '#last_evaluated_value' do
-    it 'returns the phrase "expert"' do
-      expect(last_evaluated_value).to eq("expert")
-    end
-  end
-
   describe '#pizza_party' do
     it 'returns "cheese" by default' do
       expect(pizza_party).to eq("cheese")
@@ -63,6 +47,13 @@ describe "ruby" do
 
     it 'returns the argument it received' do
       expect(pizza_party("pepperoni")).to eq("pepperoni")
+    end
+  end
+  
+  describe '#whisper' do
+    it 'returns a lowercased version of the argument it received' do
+      expect(whisper("Hey!")).to eq("hey!")
+      expect(whisper("SUP!")).to eq("sup!")
     end
   end
 end
