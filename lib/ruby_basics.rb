@@ -2,10 +2,6 @@ def division
     
 end
 
-def assign_variable
-  
-end
-
 def argue
   
 end
